@@ -18,14 +18,14 @@
 	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Spify Webpage Title</title>
+    <title>Association des DUT/DTS en Informatique de l'INP-HB</title>
 
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     @include('components.css')
 
 	<!-- Favicon  -->
-    <link rel="icon" href="{{ asset('spify/images/favicon.png') }}">
+    <link rel="icon" href="{{ asset('img/logos/Logo - ADUTI.png') }}">
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
 
@@ -45,32 +45,32 @@
             <div class="row">
                 <div class="col-lg-6 col-xl-5">
                     <div class="text-container">
-                        <h2>Branding & strategy</h2>
+                        <h2>Développement</h2>
                         <hr class="hr-heading">
-                        <p>To build a solid foundation for your online shop you need a strong brand and a bulletproof strategy. You can rely on our experience to create a beautiful and efficient online shop</p>
+                        <p>
+                            Le développeur est chargé de réaliser une analyse technique afin d’identifier, de comprendre et d’analyser les besoins des clients. A la suite de quoi, il conçoit en imaginant et en structurant l’architecture technique de ce dernier.
+                            <br><br>Puis il organise des tests afin de vérifier le bon fonctionnement des diverses fonctionnalités mises en œuvre et programme le projet informatique dont il a la charge.
+                            <br><br>Enfin, il apporte une aide technique en délivrant aux clients une documentation fonctionnelle et technique, ou en veillant au suivi et à la correction des soucis rencontrés.
+                        </p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Delivering powerful brands for popular shops</div>
+                                <div class="media-body">Développement Web</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Creating beautiful concepts and evocative logos</div>
+                                <div class="media-body">Développement Mobile</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Preparing complete branding guides and styles</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Speedy delivery of marketing design assets</div>
+                                <div class="media-body">Développement Desktop</div>
                             </li>
                         </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6 col-xl-7">
                     <div class="image-container">
-                        <img class="img-fluid" src="{{ asset('spify/images/details-1.png') }}" alt="alternative">
+                        <img class="img-fluid" src="{{ asset('img/wallpaper/info.jpg') }}" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -90,10 +90,12 @@
                 </div> <!-- end of image-area -->
                 <div class="text-area">
                     <div class="text-container">
-                        <h2>Design & development</h2>
+                        <h2>Réseaux Informatiques</h2>
                         <hr class="hr-heading">
-                        <p>Our team of competent designers and developers are able to create beautiful designs and structured code that will serve your ecommerce project to establish your market position and increase revenues</p>
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox">Lightbox</a>
+                        <p>
+                            Le technicien réseau informatique est en charge de la bonne marche du système de télécommunication de son entreprise. Qu'il s'agisse d'acheter de nouveaux matériels informatiques, de sécuriser les connexions Internet ou de développer le système interne.
+                        </p>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox">Aperçu</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of text-area -->
             </div> <!-- end of row -->
@@ -149,32 +151,16 @@
             <div class="row">
                 <div class="col-lg-6 col-xl-5">
                     <div class="text-container">
-                        <h2>Digital marketing</h2>
+                        <h2>Sécurité Informatique</h2>
                         <hr class="hr-heading">
-                        <p>We can deliver a comprehensive marketing plan and then execute it down to the smallest details. Our marketing specialist will also conduct evaluations regularly and advise you</p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Marketing plan for 6 months with evaluation</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Email campaigns for the existing customers</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Remarketing campaigns to reduce cart abandon</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Loyalty programs for your favorite clients</div>
-                            </li>
-                        </ul>
+                        <p>
+                            La sécurité informatique consiste à garantir que les ressources matérielles ou logicielles d'une organisation sont uniquement utilisées dans le cadre prévu. La sécurité des systèmes d'information vise les objectifs tels que la <strong>Confidentialité</strong>, l'<strong>Authentification</strong>, l'<strong>Intégrité</strong>, la <strong>Disponibilité</strong> et la <strong>Traçabilité<strong>
+                        </p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6 col-xl-7">
                     <div class="image-container">
-                        <img class="img-fluid" src="{{ asset('spify/images/details-3.png') }}" alt="alternative">
+                        <img class="img-fluid" src="{{ asset('img/wallpaper/cyber-security.jpg') }}" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -184,11 +170,13 @@
 
 
     <!-- Mission -->
-    <div class="basic-4">
+    <div class="basic-4" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('{{ asset('img/header_pic.jpg') }}') center center no-repeat; background-size: cover;">
         <div class="container">
             <div class="row">
                 <div class="text-container">
-                    <h4>Our mission is to deliver reliable ecommerce solutions together with the necessary consulting and marketing services which will help customers achieve long term market stability</h4>
+                    <h4>
+                        SERVICES
+                    </h4>
                 </div> <!-- end of text-container -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -247,7 +235,7 @@
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <div class="image-container">
-                                                <img class="img-fluid" src="{{ asset('spify/images/project-1.jpg') }}" alt="alternative">
+                                                <img class="img-fluid" src="{{ asset('img/header_pic.jpg') }}" alt="alternative">
                                             </div> <!-- end of image-container -->
                                         </div> <!-- end of col -->
                                         <div class="col-lg-6">
@@ -408,53 +396,7 @@
 
 
     <!-- Footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-col first">
-                        <h6>About Spify</h6>
-                        <p class="p-small">Spify is a business website Bootstrap HTML template designed to present startups in a beautiful manner with features for description</p>
-                    </div> <!-- end of footer-col -->
-                    <div class="footer-col second">
-                        <h6>Links</h6>
-                        <ul class="list-unstyled li-space-lg p-small">
-                            <li>Important: <a href="terms.html">Terms & Conditions</a>, <a href="privacy.html">Privacy Policy</a></li>
-                            <li>Useful: <a href="#">Colorpicker</a>, <a href="#">Icon Library</a>, <a href="#">Illustrations</a></li>
-                            <li>Menu: <a class="page-scroll" href="#header">Home</a>, <a class="page-scroll" href="#details">Details</a>, <a class="page-scroll" href="#strengths">Strengths</a>, <a class="page-scroll" href="#contact">Contact</a></li>
-                        </ul>
-                    </div> <!-- end of footer-col -->
-                    <div class="footer-col third">
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <p class="p-small">We would love to hear from you <a href="mailto:contact@site.com"><strong>contact@site.com</strong></a></p>
-                    </div> <!-- end of footer-col -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->
+    @include('components.footer')
     <!-- end of footer -->
 
 

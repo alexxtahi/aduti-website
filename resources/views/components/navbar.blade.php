@@ -2,7 +2,7 @@
     <div class="container">
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="{{ asset('img/logo_aduti_blanc.png') }}" alt="alternative"></a>
+        <a class="navbar-brand logo-image" href="index.html"><img src="{{ asset('img/logos/Logo Blanc - ADUTI.png') }}" alt="logo ADUTI"></a>
 
         <!-- Text Logo - Use this if you don't have a graphic logo -->
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Spify</a> -->
