@@ -1,24 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>ADUTI</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Association des DUT/DTS en Informatique de l'INP-HB">
-    <meta name="keywords" content="aduti, informatique, info, tech, actu, inphb, web, mobile">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Styles section -->
-    @include('components.css')
-    <!-- Styles section end -->
-
-
-    <!--[if lt IE 9]>
- <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
- <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
- <![endif]-->
-
-</head>
+<!-- Head section start -->
+@include('components.head')
+<!-- Head section end -->
 
 <body>
     <!-- Page Preloder -->
@@ -40,7 +25,7 @@
                     <a href="#"><i class="fa fa-pinterest"></i></a>
                     <a href="#"><i class="fa fa-linkedin"></i></a>
                     <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/adutiinphb/"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
                 </div>
             </div>
@@ -276,49 +261,26 @@
                 <div class="col-lg-9">
                     <ul class="projects-filter-nav">
                         <li class="btn-filter" data-filter="*">Tout</li>
-                        <li class="btn-filter" data-filter=".rest">Web</li>
-                        <li class="btn-filter" data-filter=".build">Mobile</li>
-                        <li class="btn-filter" data-filter=".apart">Bureau</li>
+                        <li class="btn-filter" data-filter=".web">Web</li>
+                        <li class="btn-filter" data-filter=".mobile">Mobile</li>
+                        <li class="btn-filter" data-filter=".bureau">Bureau</li>
                     </ul>
                 </div>
             </div>
         </div>
         <div id="projects-carousel" class="projects-slider">
-            <div class="single-project set-bg rest" data-setbg="{{ asset('arcade-master/img/projects/1.jpg') }}">
-                <div class="project-content">
-                    <h2>Biggest <br> Restaurations</h2>
-                    <p>Jan 19, 2018</p>
-                    <a href="#" class="seemore">See Project </a>
+            {{-- Get all projects preview --}}
+            @foreach ($projects as $project)
+                <div class="single-project set-bg {{ $project->platform }}"
+                    data-setbg="{{ asset($project->img_path) }}">
+                    <div class="project-content">
+                        <h2>{{ $project->name }}</h2>
+                        <p>{{ date('d-m-Y', $project->date) }}</p>
+                        <a href="{{ route('project.details', $project->id) }}" class="seemore">Voir le
+                            projet</a>
+                    </div>
                 </div>
-            </div>
-            <div class="single-project set-bg build" data-setbg="{{ asset('arcade-master/img/projects/2.jpg') }}">
-                <div class="project-content">
-                    <h2>Office <br> Building</h2>
-                    <p>Jan 19, 2018</p>
-                    <a href="#" class="seemore">See Project </a>
-                </div>
-            </div>
-            <div class="single-project set-bg apart" data-setbg="{{ asset('arcade-master/img/projects/3.jpg') }}">
-                <div class="project-content">
-                    <h2>Nice <br> Apartments</h2>
-                    <p>Jan 19, 2018</p>
-                    <a href="#" class="seemore">See Project </a>
-                </div>
-            </div>
-            <div class="single-project set-bg rest" data-setbg="{{ asset('arcade-master/img/projects/4.jpg') }}">
-                <div class="project-content">
-                    <h2>Biggest <br> Restaurations</h2>
-                    <p>Jan 19, 2018</p>
-                    <a href="#" class="seemore">See Project </a>
-                </div>
-            </div>
-            <div class="single-project set-bg apart" data-setbg="{{ asset('arcade-master/img/projects/2.jpg') }}">
-                <div class="project-content">
-                    <h2>Office <br> Building</h2>
-                    <p>Jan 19, 2018</p>
-                    <a href="#" class="seemore">See Project </a>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
     <!-- Projects section end -->
@@ -328,31 +290,16 @@
     <div class="client-section spad">
         <div class="container">
             <div id="client-carousel" class="client-slider">
-                <div class="single-brand">
-                    <a href="#">
-                        <img src="{{ asset('arcade-master/img/clients/1.png') }}" alt="">
-                    </a>
-                </div>
-                <div class="single-brand">
-                    <a href="#">
-                        <img src="{{ asset('arcade-master/img/clients/2.png') }}" alt="">
-                    </a>
-                </div>
-                <div class="single-brand">
-                    <a href="#">
-                        <img src="{{ asset('arcade-master/img/clients/3.png') }}" alt="">
-                    </a>
-                </div>
-                <div class="single-brand">
-                    <a href="#">
-                        <img src="{{ asset('arcade-master/img/clients/4.png') }}" alt="">
-                    </a>
-                </div>
-                <div class="single-brand">
-                    <a href="#">
-                        <img src="{{ asset('arcade-master/img/clients/5.png') }}" alt="">
-                    </a>
-                </div>
+                {{-- Get all partners logos --}}
+                @for ($i = 0; $i < 5; $i++)
+                    @foreach ($partners as $partner)
+                        <div class="single-brand">
+                            <a href="#">
+                                <img src="{{ asset($partner->logo_path) }}" alt="">
+                            </a>
+                        </div>
+                    @endforeach
+                @endfor
             </div>
         </div>
     </div>

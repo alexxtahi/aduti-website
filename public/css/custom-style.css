@@ -3,3 +3,7 @@
     width: 122px !important;
     height: 50px !important;
 }
+
+.custom-center-title {
+    text-align: center !important;
+}

@@ -15,26 +15,25 @@
                     <div class="col-md-4">
                         <div class="footer-item">
                             <ul>
-                                <li><a href="#">Accueil</a></li>
-                                <li><a href="#">A propos</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Portfolio</a></li>
-                                <li><a href="#">Blog</a></li>
+                                <li><a href="{{ route('home') }}">Accueil</a></li>
+                                <li><a href="{{ route('about') }}">A propos</a></li>
+                                <li><a href="{{ route('services') }}">Services</a></li>
+                                <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
+                                <li><a href="{{ route('blog') }}">Blog</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="footer-item">
                             <ul>
-                                <li><a href="#">Promotions</a></li>
-                                <li><a href="#">Localisation</a></li>
-                                <li><a href="#">Besoin d'aide ?</a></li>
-                                <li><a href="#">Nous contacter !</a></li>
-                                <li><a href="#">FAQ</a></li>
+                                <li><a href="{{ route('promos') }}">Promotions</a></li>
+                                <li><a href="{{ route('help') }}">Besoin d'aide ?</a></li>
+                                <li><a href="{{ route('contact') }}">Nous contacter !</a></li>
+                                <li><a href="{{ route('faq') }}">FAQ</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    {{-- <div class="col-md-4">
                         <div class="footer-item">
                             <ul>
                                 <li><a href="#">Privacy</a></li>
@@ -44,19 +43,19 @@
                                 <li><a href="#">FAQ</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    <div class="copyright">Copyright &copy;
+    {{-- <div class="copyright">Copyright &copy;
         <script>
             document.write(new Date().getFullYear());
         </script> All rights reserved. <br>This template is made with <i class="fa fa-heart-o"
             aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-    </div>
+    </div> --}}
     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
 </footer>

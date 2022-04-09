@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +15,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'home')->name('home');
+// Home
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // Basic routes
-Route::view('/about', 'about')->name('about');
-Route::view('/services', 'services')->name('services');
-Route::view('/portfolio', 'portfolio')->name('portfolio');
-Route::view('/contact', 'contact')->name('contact');
+Route::view('/about', 'pages.about')->name('about');
+Route::view('/services', 'pages.services')->name('services');
+Route::view('/portfolio', 'pages.portfolio')->name('portfolio');
+Route::view('/contact', 'pages.contact')->name('contact');
+Route::view('/blog', 'pages.blog')->name('blog');
+Route::view('/promos', 'pages.promos')->name('promos');
+Route::view('/help', 'pages.help')->name('help');
+Route::view('/faq', 'pages.faq')->name('faq');
+
+// Projects
+Route::get('/project/{id_project}', [ProjectController::class, 'details'])->name('project.details');

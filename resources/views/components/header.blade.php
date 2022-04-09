@@ -9,11 +9,21 @@
     <div class="phone-number">+225 05 84 64 98 25</div>
     <nav class="nav-menu">
         <ul>
-            <li class="active"><a href="{{ route('home') }}">Accueil</a></li>
-            <li><a href="{{ route('about') }}">A propos</a></li>
-            <li><a href="{{ route('services') }}">Services</a></li>
-            <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
-            <li><a href="{{ route('contact') }}">Contact</a></li>
+            <li @if ($view_name == 'home') class="active" @endif>
+                <a href="{{ route('home') }}">Accueil</a>
+            </li>
+            <li @if ($view_name == 'pages.about') class="active" @endif>
+                <a href="{{ route('about') }}">A propos</a>
+            </li>
+            <li @if ($view_name == 'pages.services') class="active" @endif>
+                <a href="{{ route('services') }}">Services</a>
+            </li>
+            <li @if ($view_name == 'pages.portfolio') class="active" @endif>
+                <a href="{{ route('portfolio') }}">Portfolio</a>
+            </li>
+            <li @if ($view_name == 'pages.contact') class="active" @endif>
+                <a href="{{ route('contact') }}">Contact</a>
+            </li>
         </ul>
     </nav>
 </header>
